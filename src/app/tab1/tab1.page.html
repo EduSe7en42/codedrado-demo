@@ -1,17 +1,15 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+  <toolbar-principal title="Feed de notícias"></toolbar-principal>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item *ngFor="let article of articles;">
+    <app-news-card
+      subtitle={{article.author}}
+      link={{article.link}}
+      media={{article.media}}
+      title={{article.title}}
+      content={{article.summary}}
+    ></app-news-card>
+  </ion-item>
 </ion-content>

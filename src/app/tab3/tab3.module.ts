@@ -7,6 +7,7 @@ import { Tab3Page } from './tab3.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { ToolbarPrincipalComponentModule } from '../toolbar-principal/toolbar-principal.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
+    ToolbarPrincipalComponentModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
   ],
