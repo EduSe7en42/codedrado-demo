@@ -22,3 +22,5 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [Tab1Page]
 })
 export class Tab1PageModule {}
+export { Tab1Page };
+

@@ -3,6 +3,8 @@
     {{ title }}
   </ion-title>
   <ion-buttons slot="secondary">
-    <ion-searchbar></ion-searchbar>
+    <ion-searchbar #q
+      (keyup.enter)="searchNews(q.value)">
+    </ion-searchbar>
   </ion-buttons>
 </ion-toolbar>
